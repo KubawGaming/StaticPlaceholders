@@ -1,6 +1,6 @@
 # StaticPlaceholders
 
-Plugin staticplaceholders pozwala na łatwe dodanie statycznych placeholderów bez konieczności implementowania stałych placeholderów w inne pluginy.
+The staticplaceholders plugin allows you to easily add static placeholders without having to implement static placeholders in other plugins.
 
 Config.yml:
 ```yaml
