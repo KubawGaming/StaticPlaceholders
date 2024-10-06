@@ -1,5 +1,5 @@
 name: StaticPlaceholders
-version: '1.0.0'
+version: '${version}'
 main: me.kubaw208.staticplaceholders.StaticPlaceholders
 depend:
   - PlaceholderAPI
