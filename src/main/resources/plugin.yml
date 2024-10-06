@@ -1,0 +1,8 @@
+name: StaticPlaceholders
+version: '1.0.0'
+main: me.kubaw208.staticplaceholders.StaticPlaceholders
+depend:
+  - PlaceholderAPI
+
+commands:
+  staticplaceholdersreload:
