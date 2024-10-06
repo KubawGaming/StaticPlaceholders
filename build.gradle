@@ -27,12 +27,9 @@ dependencies {
     compileOnly 'me.clip:placeholderapi:2.11.6'
 
     annotationProcessor 'org.projectlombok:lombok:1.18.32'
-
-    implementation 'de.exlll:configlib-paper:4.5.0'
-    implementation 'de.exlll:configlib-yaml:4.5.0'
 }
 
-def targetJavaVersion = 17
+def targetJavaVersion = 8
 java {
     def javaVersion = JavaVersion.toVersion(targetJavaVersion)
     sourceCompatibility = javaVersion

@@ -3,7 +3,6 @@ package me.kubaw208.staticplaceholders;
 import lombok.Getter;
 import me.kubaw208.staticplaceholders.api.CustomPlaceholderExpansion;
 import me.kubaw208.staticplaceholders.commands.Reload;
-import me.kubaw208.staticplaceholders.configs.ConfigLoader;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class StaticPlaceholders extends JavaPlugin {
@@ -16,7 +15,7 @@ public final class StaticPlaceholders extends JavaPlugin {
         instance = this;
         configLoader = new ConfigLoader();
 
-        configLoader.loadConfigs();
+        configLoader.loadConfig();
 
         getCommand("staticplaceholdersreload").setExecutor(new Reload());
 

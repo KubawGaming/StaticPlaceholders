@@ -1,7 +1,7 @@
 package me.kubaw208.staticplaceholders.commands;
 
 import me.kubaw208.staticplaceholders.StaticPlaceholders;
-import me.kubaw208.staticplaceholders.configs.ConfigLoader;
+import me.kubaw208.staticplaceholders.ConfigLoader;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -14,12 +14,12 @@ public class Reload implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if(!sender.hasPermission("staticplaceholders.reload")) {
-            sender.sendMessage(ChatColor.translateAlternateColorCodes('&', configs.getConfigFile().noPermissionMessage));
+            sender.sendMessage(ChatColor.translateAlternateColorCodes('&', configs.getConfig().getString("noPermissionMessage")));
             return false;
         }
 
-        configs.loadConfigs();
-        sender.sendMessage(ChatColor.translateAlternateColorCodes('&', configs.getConfigFile().successfullyReloadedMessage));
+        configs.loadConfig();
+        sender.sendMessage(ChatColor.translateAlternateColorCodes('&', configs.getConfig().getString("successfullyReloadedMessage")));
         return false;
     }
 
